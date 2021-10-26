@@ -23,6 +23,6 @@ I will include all my completed challenges under the [Completed](#completed) tab
 ![](./Screenshots/fyloLandingPage/fylo-mobile-3.JPG)
 
 #### Desktop
-![](./Screenshots/fyloLanding/fylo-desktop-1.JPG)
-![](./Screenshots/fyloLanding/fylo-desktop-2.JPG)
-![](./Screenshots/fyloLanding/fylo-desktop-3.JPG)
+![](./Screenshots/fyloLandingPage/fylo-desktop-1.JPG)
+![](./Screenshots/fyloLandingPage/fylo-desktop-2.JPG)
+![](./Screenshots/fyloLandingPage/fylo-desktop-3.JPG)
