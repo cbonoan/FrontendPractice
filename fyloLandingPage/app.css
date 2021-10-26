@@ -1,0 +1,289 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Open-sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* ------------------------------------------------------------ */
+#navbar {
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar a span img {
+    width: 92px;
+    margin-right: 20px;
+}
+#navbar ul a {
+    font-weight: 700;
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+}
+#navbar ul a:hover {
+    color: hsl(243, 87%, 12%);
+}
+#navbar ul {
+    font-size: 13px;
+    flex: 1;
+    display: flex !important;
+    justify-content: space-between;
+}
+#about {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#about img {
+    width: 100%;
+    height: 100%;
+}
+#about #info1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: hsl(243, 87%, 12%);
+}
+#about #info2 {
+    font-weight: 600;
+    font-size: 15px;
+    color: hsl(238, 22%, 44%);
+}
+.email {
+    margin-bottom: 20px;
+    border: 1px solid hsl(243, 87%, 12%);
+}
+.button {
+    border: none;
+    font-weight: 700;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.email, .button {
+    width: 325px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#more-info {
+    margin-top: 10em;
+    padding: 3em;
+    background-image: url(images/bg-curve-mobile.svg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#more-info-image #image2 {
+    width: 100%;
+    height: 100%;
+}
+#statement p:nth-child(1) {
+    font-weight: bold;
+    font-size: 17px;
+    color: hsl(243, 87%, 12%);
+}
+#statement p:nth-child(2) {
+    width: 325px;
+    text-align: left;
+    font-size: 15px;
+    color: hsl(238, 22%, 44%);
+}
+#demo-link a {
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+}
+#demo-link span {
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 10px;
+}
+.testimonial {
+    width: 325px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px 30px;
+    margin: 50px 0 25px 0;
+    text-align: left;
+}
+.testimonial #quotes-icon img {
+    width: 10%;
+    height: 10%;
+}
+.testimonial #quote {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(238, 22%, 44%);
+}
+#testimonial-img img {
+    margin-right: 10px;
+    float: left;
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+}   
+#testimonial-img p.name {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: hsl(238, 22%, 44%);
+}
+#testimonial-img p.person-description {
+    color: hsl(238, 22%, 44%);
+    font-size: 10px;
+}
+
+#early-access {
+    background-color: hsl(238, 22%, 44%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 75px 25px;
+}
+#join-today  {
+    color: hsl(240, 75%, 98%);
+}
+#join-today span {
+    font-size: 20px;
+    font-weight: bold;
+}
+#early-access-form .email {
+    border: none;
+}
+#early-access-form .email, #early-access-form .button {
+    width: 300px;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px 25px 30px;
+    color: hsl(240, 75%, 98%);
+}
+#contact-info {
+    margin: 30px 0;
+}
+#contact-info img {
+    margin-right: 10px;
+}
+#footer-links ul, #other-links ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#footer-links ul a, #other-links ul a {
+    color: hsl(240, 75%, 98%);
+    text-decoration: none;
+}
+#footer-links ul li, #other-links ul li {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 1440px) {
+    #navbar ul {
+        flex: 0.3;
+        justify-content: space-evenly;
+    }
+    #about, #more-info {
+        flex-direction: row-reverse;
+    }
+    #info, #more-info, #early-access {
+        text-align: left;
+    }
+    #about #info1{
+        font-size: 45px;
+    }
+    #about #info2 {
+        font-size: 30px;
+    }
+    #about-form .email {
+        width: 450px;
+        margin-right: 15px;
+    }
+    #more-info {
+        justify-content: space-between;
+    }
+    #more-info #statement {
+        padding-top: 100px;
+    }
+    #more-info #more-info-header {
+        font-size: 38px;
+    }
+    #more-info #more-info-description {
+        width: 500px;
+    }
+    #more-info-image {
+        width: 50%;
+        height: 50%;
+    }
+    #more-info #quote p {
+        font-size: 12px;
+    }
+    #early-access, footer {
+        flex-direction: row;
+    }
+    #join-today {
+        width: 55%;
+    }
+    #join-today span {
+        font-size: 25px;
+    }
+    #early-access-form .email {
+        width: 600px;
+    }
+    footer {
+        justify-content: space-between;
+    }
+}
