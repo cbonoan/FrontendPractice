@@ -6,8 +6,6 @@ This repository is going to help me keep track of all the challenges I complete 
 - [Overview](#overview)
 - [Completed](#completed)
     - [Fylo Landing Page](#fylo-landing-page)
-        - [Mobile](#fylo-mobile)
-        - [Desktop](#fylo-desktop)
 
 ## Overview 
 
