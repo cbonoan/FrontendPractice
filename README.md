@@ -23,6 +23,10 @@ This challenge was to make a simple landing page for the imaginary Fylo company.
 Designs created for the follow widths:
 375px - Mobile
 1440px - Desktop
+
+Tools/Technology used:
+HTML5
+CSS3
 #### Mobile 
 ![](./Screenshots/fyloLandingPage/fylo-mobile-1.JPG)
 ![](./Screenshots/fyloLandingPage/fylo-mobile-2.JPG)
@@ -41,6 +45,9 @@ Designs created for the follow widths:
 375px - Mobile
 1440px - Desktop
 
+Tools/Technology used:
+HTML5
+CSS3
 ### Mobile 
 ![](./Screenshots/chatApp/chat-app-mobile-1.JPG)
 
