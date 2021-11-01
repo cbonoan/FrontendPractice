@@ -1,0 +1,52 @@
+.item-adder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-adder .item-quantity {
+  background-color: #f7f8fd;
+  border-radius: 5px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.item-adder .item-quantity span {
+  cursor: pointer;
+}
+
+.item-adder button {
+  background-color: #ff7d1a;
+  color: white;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.item-adder button span {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=AddItem.css.map */

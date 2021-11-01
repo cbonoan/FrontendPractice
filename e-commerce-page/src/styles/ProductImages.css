@@ -1,0 +1,66 @@
+#img-carousel {
+  margin-top: 0px;
+}
+
+.carousel-prev-icon, .carousel-next-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  background-color: white;
+  border-radius: 100px;
+  padding: 7px;
+}
+
+#img-row {
+  display: none;
+}
+
+@media screen and (min-width: 1250px) {
+  .carousel-next-icon, .carousel-prev-icon {
+    display: none;
+  }
+  #carousel-content {
+    width: 75%;
+    margin-right: 50px;
+  }
+  #img-carousel {
+    min-width: 100%;
+  }
+  #img-carousel img {
+    border-radius: 10px;
+  }
+  #img-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  #img-row img {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+  }
+  #img-row span.active {
+    border-radius: 10px;
+    border: 1px solid red;
+  }
+  #img-row span.active img {
+    opacity: 0.4;
+  }
+}
+/*# sourceMappingURL=ProductImages.css.map */

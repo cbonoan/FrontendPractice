@@ -1,0 +1,51 @@
+@import './variables';
+
+#img-carousel {
+    margin-top: 0px;
+}
+.carousel-prev-icon, .carousel-next-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+    padding: 7px;
+}
+#img-row {
+    display: none;
+}
+
+@media screen and (min-width: 1250px) {
+    .carousel-next-icon, .carousel-prev-icon {
+        display: none;
+    }
+    #carousel-content {
+        max-width: 600px;
+        margin-right: 50px;
+    }
+    #img-carousel {
+        img {
+            border-radius: 10px;
+        }
+    }
+    #img-row {
+        img, span {
+            width: 75px;
+            height: 75px;
+            border-radius: 10px;
+        }
+        span.active  {
+            border: 1.5px solid $primary-orange;
+            img {
+                opacity: 0.4;
+            }
+        }
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}

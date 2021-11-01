@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import '../styles/Nav.css'
 
 import logo from '../images/logo.svg';
@@ -7,11 +7,18 @@ import cartIcon from '../images/icon-cart.svg';
 import avatarImg from '../images/image-avatar.png';
 
 function Nav() {
+    const isMounted = useRef(false);
+
     const [navActive, setNavActive] = useState(false);
     useEffect(() => {
-        const nav = document.querySelector('.nav-links');
-        nav.classList.toggle('nav-active');
-    });
+        if(isMounted.current) {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('nav-active');
+        } else {
+            isMounted.current = true;
+        }
+
+    }, [navActive]);
 
     const navSlide = () => {
         setNavActive(!navActive);
