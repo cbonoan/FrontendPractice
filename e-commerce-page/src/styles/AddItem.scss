@@ -30,3 +30,16 @@
         padding: 10px;
     }
 }
+
+@media screen and (min-width: 1250px) {
+    .item-adder {
+        flex-direction: row;
+        .item-quantity {
+            width: 200px;
+        }
+    }
+    button {
+        margin-top: 0 !important;
+        margin-left: 15px;
+    }
+}

@@ -49,4 +49,20 @@
 .item-adder button span {
   margin-left: 15px;
 }
+
+@media screen and (min-width: 1250px) {
+  .item-adder {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .item-adder .item-quantity {
+    width: 200px;
+  }
+  button {
+    margin-top: 0 !important;
+    margin-left: 15px;
+  }
+}
 /*# sourceMappingURL=AddItem.css.map */

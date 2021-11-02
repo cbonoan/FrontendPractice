@@ -12,6 +12,9 @@
     border-radius: 100px;
     padding: 7px;
 }
+#img-spotlight {
+    display: none;
+}
 #img-row {
     display: none;
 }
@@ -25,8 +28,13 @@
         margin-right: 50px;
     }
     #img-carousel {
+        display: none;
+    }
+    #img-spotlight {
+        display: block;
         img {
             border-radius: 10px;
+            max-width: 100%;
         }
     }
     #img-row {
@@ -34,6 +42,9 @@
             width: 75px;
             height: 75px;
             border-radius: 10px;
+        }
+        span {
+            cursor: pointer;
         }
         span.active  {
             border: 1.5px solid $primary-orange;
@@ -46,6 +57,5 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 20px;
-        cursor: pointer;
     }
 }

@@ -1,8 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import '../styles/ProductImages.scss';
 function ProductImages(props) {
+    const [imgPreview, setImgPreview] = useState(props.images[0]);
+    const [activeImg, setActiveImg] = useState();
 
+    useEffect(() => {
+        const initialActiveImg = document.querySelector('#img-row span.active');
+        setActiveImg(initialActiveImg);
+    }, [])
+    const changeSpotlight = (event, img) => {
+        setImgPreview(img);
+        const newActiveImg = event.target.parentElement;
+        if(newActiveImg.classList.contains('.active') === false) {
+            activeImg.classList.remove('active');
+            newActiveImg.classList.add('active');
+            setActiveImg(newActiveImg);
+        }
+    }
+    
     return(
         <div id="carousel-content">
             <div id="img-carousel" className="carousel slide" data-bs-interval="false">
@@ -43,11 +59,14 @@ function ProductImages(props) {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <div id="img-spotlight">
+                <span><img src={imgPreview} alt="Spotlight"></img></span>
+            </div>
             <div id="img-row">
-                <span className="active"><img src={props.images[0]} alt="Image1"></img></span>
-                <span className=""><img src={props.images[1]} alt="Image2"></img></span>
-                <span className=""><img src={props.images[2]} alt="Image3"></img></span>
-                <span className=""><img src={props.images[3]} alt="Image4"></img></span>
+                <span className="active" onClick={(event) => changeSpotlight(event, props.images[0])}><img src={props.images[0]} alt="Image1"></img></span>
+                <span className="" onClick={(event) => changeSpotlight(event, props.images[1])}><img src={props.images[1]} alt="Image2"></img></span>
+                <span className="" onClick={(event) => changeSpotlight(event, props.images[2])}><img src={props.images[2]} alt="Image3"></img></span>
+                <span className="" onClick={(event) => changeSpotlight(event, props.images[3])}><img src={props.images[3]} alt="Image4"></img></span>
             </div>
         </div>
         

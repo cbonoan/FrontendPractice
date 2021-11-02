@@ -1,7 +1,10 @@
+import React, {useState} from 'react';
+
 import Nav from './components/Nav';
 import ProductImages from './components/ProductImages';
 import ProductDescription from './components/ProductDescription';
 import AddItem from './components/AddItem';
+import ItemsModal from './components/ItemsModal';
 
 import image1 from './images/image-product-1.jpg'
 import image2 from './images/image-product-2.jpg'
@@ -19,14 +22,27 @@ function App() {
     onSale: true,
     sale: 50
   };
+
+  const [cartItems, setCartItems] = useState(0);
+  const cartHandler = (numItems) => {
+    let newCartItems = cartItems+numItems;
+    setCartItems(newCartItems);
+  }
+
+  const [showCheckout, setShowCheckout] = useState(false);
+  const handleModal = () => {
+    setShowCheckout(!showCheckout);
+  }
+
   return (
     <div>
-      <Nav/>
+      <Nav cartQuantity={cartItems} modalHandle={handleModal}/>
+      <ItemsModal show={showCheckout} modalHandle={handleModal} itemQuantity={cartItems}/>
       <div id="product">
         <ProductImages images={productImages}/>
         <div id="product-info-cart">
           <ProductDescription product={productDetails}/>
-          <AddItem/>
+          <AddItem updateCart={cartHandler}/>
         </div>
       </div>
     </div>

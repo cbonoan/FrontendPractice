@@ -53,4 +53,10 @@
   color: #b8b6b6;
   text-decoration: line-through;
 }
+
+@media screen and (min-width: 1250px) {
+  #product-description {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=ProductDescription.css.map */

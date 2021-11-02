@@ -58,22 +58,36 @@ nav {
 }
 #cart-avatar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 #cart {
     cursor: pointer;
+    height: 20px;
 }
 #avatar {
     width: 20%;
 }
-
+#cart-quantity {
+    text-align: center;
+    position: relative;
+    bottom: 12px;
+    right: 30%;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    padding: 0 1px;
+    border-radius: 10px;
+    width: 25px;
+}
 
 @media screen and (min-width: 1000px) {
     nav {
         padding: 30px 0 40px 0 !important;
         margin: 0 100px !important;
         border-bottom: 1px solid hsl(220, 14%, 75%);
-    }
+    }   
     #close-icon {
         display: none;
     }
@@ -94,6 +108,7 @@ nav {
     .toggle {
         display: none;
     }
-    
-    
+    #avatar {
+        width: 30%;
+    }
 }
