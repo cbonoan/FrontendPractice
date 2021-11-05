@@ -37,7 +37,11 @@ function App() {
   return (
     <div>
       <Nav cartQuantity={cartItems} modalHandle={handleModal}/>
-      <ItemsModal show={showCheckout} modalHandle={handleModal} itemQuantity={cartItems}/>
+      <ItemsModal show={showCheckout} 
+      modalHandle={handleModal} 
+      itemQuantity={cartItems} 
+      images={productImages} 
+      productDetails={productDetails}/>
       <div id="product">
         <ProductImages images={productImages}/>
         <div id="product-info-cart">

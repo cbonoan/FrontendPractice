@@ -1,13 +1,22 @@
-import React, {useState} from 'react';
-import {Modal, Button} from 'react-bootstrap';
-import '../styles/ItemsModal.scss'
+import React, {useState, useEffect} from 'react';
+import {Modal} from 'react-bootstrap';
+import CartItem from './CartItem';
 
+import '../styles/ItemsModal.scss'
 function ItemsModal(props) {
+    const [checkout, setCheckout] = useState(false);
+    const [content, setContent] = useState("Looks like your cart is empty!")
+
+    useEffect(() => {
+        if(props.itemQuantity > 0) {
+            setCheckout(true);
+            setContent(<CartItem items={props.itemQuantity} image={props.images[0]} prodDetails={props.productDetails}/>)
+        }
+    }, [props.itemQuantity])
     const handleClose = () => {
         props.modalHandle();
     }
 
-    let content = "Looks like your cart is empty!";
     return(
         <div>
             <Modal show={props.show} onHide={handleClose}>
@@ -15,7 +24,14 @@ function ItemsModal(props) {
                 <Modal.Title><span id="modal-title">Cart</span></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <span id="modal-body">{content}</span>
+                    <div id="modal-body">
+                        <div id="modal-checkout-details">
+                            <span>{content}</span>
+                        </div>
+                        <div id="modal-checkout-btn">
+                            <button id="modal-btn" type="button" className={`btn ${!checkout && "disabled"}`}>Checkout</button>
+                        </div>
+                    </div>
                 </Modal.Body>
             </Modal>
         </div>

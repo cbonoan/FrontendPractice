@@ -1,0 +1,31 @@
+#cart-item-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cart-item-details img {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+#cart-item-details #cart-product-details p {
+  color: #b6bcc8;
+}
+
+#cart-item-details #cart-product-details p span {
+  color: #1d2025;
+  font-weight: 700;
+}
+
+#cart-item-details #delete-icon {
+  cursor: pointer;
+}
+/*# sourceMappingURL=CartItem.css.map */

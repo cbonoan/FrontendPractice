@@ -53,3 +53,16 @@ CSS3
 
 ### Desktop
 ![](./Screenshots/chatApp/chat-app-desktop-1.JPG)
+
+### E-Commerce 
+
+This was an especially difficult challenge that tested my JS skills. With this challenge, I decided to use the React.js framework in order to make the different components such as the checkout modal, navbar, etc. What made this difficult was passing the information from one component to another when adding items to the cart. In all, this was a super fun challenge, and I am glad of the outcome!
+
+### Mobile
+![](./Screenshots/eCommerce/eCommerce-mobile-1.JPG)
+![](./Screenshots/eCommerce/eCommerce-mobile-2.JPG)
+![](./Screenshots/eCommerce/eCommerce-mobile-3.JPG)
+
+### Desktop 
+![](./Screenshots/eCommerce/eCommerce-desktop-2.JPG)
+![](./Screenshots/eCommerce/eCommerce-desktop-1.JPG)
