@@ -7,6 +7,7 @@ This repository is going to help me keep track of all the challenges I complete 
 - [Completed](#completed)
     - [Fylo Landing Page](#fylo-landing-page)
     - [Chat App](#chat-app)
+    - [E-Commerce](#e-commerce)
 
 ## Overview 
 
