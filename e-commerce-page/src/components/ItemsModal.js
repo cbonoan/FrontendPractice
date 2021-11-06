@@ -10,9 +10,12 @@ function ItemsModal(props) {
     useEffect(() => {
         if(props.itemQuantity > 0) {
             setCheckout(true);
-            setContent(<CartItem items={props.itemQuantity} image={props.images[0]} prodDetails={props.productDetails}/>)
+            setContent(<CartItem items={props.itemQuantity} image={props.images[0]} prodDetails={props.productDetails} updateCart={props.updateCart}/>)
+        } else {
+            setCheckout(false)
+            setContent("Looks like your cart is empty!")
         }
-    }, [props.itemQuantity])
+    }, [props.itemQuantity, props.images, props.productDetails, props.updateCart])
     const handleClose = () => {
         props.modalHandle();
     }

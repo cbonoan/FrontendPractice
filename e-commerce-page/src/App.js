@@ -41,7 +41,8 @@ function App() {
       modalHandle={handleModal} 
       itemQuantity={cartItems} 
       images={productImages} 
-      productDetails={productDetails}/>
+      productDetails={productDetails}
+      updateCart={cartHandler}/>
       <div id="product">
         <ProductImages images={productImages}/>
         <div id="product-info-cart">

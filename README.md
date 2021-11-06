@@ -58,6 +58,19 @@ CSS3
 
 This was an especially difficult challenge that tested my JS skills. With this challenge, I decided to use the React.js framework in order to make the different components such as the checkout modal, navbar, etc. What made this difficult was passing the information from one component to another when adding items to the cart. In all, this was a super fun challenge, and I am glad of the outcome!
 
+I was so glad with how it turned out, I deployed it to github pages! Click [here](https://cbonoan.github.io/eCommerceProject/) to see it. 😄
+
+Tools/Technology used:
+
+HTML5
+
+CSS3
+
+JS
+
+React
+
+Github Pages
 ### Mobile
 ![](./Screenshots/eCommerce/eCommerce-mobile-1.JPG)
 ![](./Screenshots/eCommerce/eCommerce-mobile-2.JPG)

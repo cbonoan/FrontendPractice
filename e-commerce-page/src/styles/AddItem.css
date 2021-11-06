@@ -31,7 +31,11 @@
   cursor: pointer;
 }
 
-.item-adder button {
+.item-adder .item-quantity span img:hover {
+  opacity: 0.5;
+}
+
+.item-adder #add-to-cart-btn {
   background-color: #ff7d1a;
   color: white;
   width: 80%;
@@ -46,7 +50,11 @@
   padding: 10px;
 }
 
-.item-adder button span {
+.item-adder #add-to-cart-btn:hover {
+  opacity: 0.5;
+}
+
+.item-adder #add-to-cart-btn span {
   margin-left: 15px;
 }
 

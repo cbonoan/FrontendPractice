@@ -14,9 +14,15 @@
         padding: 15px;
         span {
             cursor: pointer;
+            img:hover {
+                opacity: 0.5;
+            }
         }
     }
-    button {
+    #add-to-cart-btn {
+        &:hover {
+            opacity: 0.5;
+        }
         span {
             margin-left: 15px;
         }
