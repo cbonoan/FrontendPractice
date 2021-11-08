@@ -7,7 +7,7 @@ This repository is going to help me keep track of all the challenges I complete 
 - [Completed](#completed)
     - [Fylo Landing Page](#fylo-landing-page)
     - [Chat App](#chat-app)
-    - [E-Commerce](#e-commerce)
+    - [E-Commerce](#e-commerce) [Live site](https://cbonoan.github.io/eCommerceProject/)
 
 ## Overview 
 
